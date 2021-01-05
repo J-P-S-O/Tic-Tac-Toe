@@ -7,7 +7,7 @@ int main(int argc, char **argv){
         std::cout<< "Invalid Arguments";
         exit(1);
     }
-    Console Interface;
-    
+    Console Interface();
+
     
 }
