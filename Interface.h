@@ -12,9 +12,9 @@ class Console {
 		char** in(){
 			char** arr = [ ' ', ' '];
 			std::cout<< "Select a Column (1, 2, 3 )";
-			cin>>arr[0];
+			std::cin>>arr[0];
 			std::cout<< "Select a line (1,2,3)";
-			cin>>arr[1];
+			std::cin>>arr[1];
 			return arr;
 	}
 };
