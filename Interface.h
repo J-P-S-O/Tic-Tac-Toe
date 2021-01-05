@@ -1,8 +1,7 @@
 # include <iostream>
-class Console (){
-	public:
-		void print(char** board){
-			for (int i = 0, i++, i<board.length ){
+class Console {
+	public: void print(char** board){
+			for (int i = 0; i++; i < board.length ){
 				if (i % 3 == 0){
 					std::cout << board[i] + "\n";
 				}else{
