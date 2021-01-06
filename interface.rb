@@ -19,4 +19,5 @@ def cin()
 end
 
 def check(board)
-  
+  for i in board
+    
