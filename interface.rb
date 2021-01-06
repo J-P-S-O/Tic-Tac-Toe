@@ -3,6 +3,7 @@ def cout(board)
   for (i in board):
     print([i[0], i[1], i[2]].join("||"))
 end
+
 def cin()
   arr = []
   print("Choose a column, 1 - 2 - 3 :")
@@ -14,4 +15,8 @@ def cin()
     arr = []
     arr = cin()
     return arr
-  return arr  
+  return arr
+end
+
+def check(board)
+  
