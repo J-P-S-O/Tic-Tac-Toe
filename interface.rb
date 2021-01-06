@@ -7,9 +7,9 @@ end
 
 def cin()
   arr = []
-  print("Choose a column, 1 - 2 - 3 :")
+  print("Choose a column, 1 - 2 - 3 ::")
   arr[0] = Integer(gets.chomp)-1
-  puts "Choose a line, 1 -2 -3 "
+  print "Choose a line, 1 -2 -3:: "
   arr[1] = Integer(gets.chomp) -1
   if (arr[0] > 2 || arr[1] > 2)
     puts "Invalid chars"
@@ -26,4 +26,4 @@ def check(board)
       return true
     end
   end
-  if (board)
+end
