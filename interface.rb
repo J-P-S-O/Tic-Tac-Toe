@@ -17,6 +17,3 @@ def cin()
     return arr
   return arr
 end
-
-def check(board)
-  for i in board
