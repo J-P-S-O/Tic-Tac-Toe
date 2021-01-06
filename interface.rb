@@ -14,3 +14,4 @@ def cin()
     arr = []
     arr = cin()
     return arr
+  return arr  
