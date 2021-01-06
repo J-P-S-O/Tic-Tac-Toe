@@ -2,6 +2,7 @@
 def cout(board)
   board.each do | i |
     print([i[0], i[1], i[2]].join("||"))
+  end
 end
 
 def cin()
@@ -15,5 +16,9 @@ def cin()
     arr = []
     arr = cin()
     return arr
+  end
   return arr
+
+
+
 end

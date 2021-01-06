@@ -1,4 +1,4 @@
 # This is the main File
 require "./interface"
-test = interface.cin()
+test = cin()
 puts test.join("  ")
