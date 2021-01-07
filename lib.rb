@@ -1,4 +1,7 @@
 # And this  file has the main stuff
+
+
+
 def check(board)
   board.each do | i |
     if (i[0] == i[1] && i[1] == i[2] && i[0] != "")
@@ -18,3 +21,11 @@ def check(board)
  end
 
 end
+
+
+
+# Now we need to get the possible moves
+def _moves(board)
+  free_ = []
+  board.each do | el |
+    el.each do | elt |
