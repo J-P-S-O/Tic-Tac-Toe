@@ -9,10 +9,15 @@ end
 
 def cin()
   arr = []
-  print("Choose a column, 1 - 2 - 3 ::")
-  arr[0] = Integer(gets.chomp)-1
-  print "Choose a line, 1 -2 -3:: "
-  arr[1] = Integer(gets.chomp) -1
+  begin
+    print("Choose a column, 1 - 2 - 3 ::")
+    arr[0] = Integer(gets.chomp)-1
+    print "Choose a line, 1 -2 -3:: "
+    arr[1] = Integer(gets.chomp) -1
+  rescue
+    puts "OH NO, SOMETHING WENT (VERY) WRONG"
+    cin()
+  end
   if (arr[0] > 2 || arr[1] > 2 || arr[0] < 0 || arr[1] < 0)
     puts "Invalid chars"
     arr = []
