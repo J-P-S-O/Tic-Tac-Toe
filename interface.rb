@@ -18,6 +18,7 @@ def cin()
     puts "OH NO, SOMETHING WENT (VERY) WRONG"
     cin()
   end
+  
   if (arr[0] > 2 || arr[1] > 2 || arr[0] < 0 || arr[1] < 0)
     puts "Invalid chars"
     arr = []
