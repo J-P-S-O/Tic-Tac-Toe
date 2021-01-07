@@ -1,7 +1,9 @@
 # This file has the interface library
 def cout(board)
   board.each do | i |
-    print([i[0], i[1], i[2]].join("||"))
+    print([i[0], i[1], i[2]].join("\t"))
+    print("\n")
+    puts "--------------------"
   end
 end
 
