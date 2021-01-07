@@ -11,7 +11,7 @@ def cin()
   arr[0] = Integer(gets.chomp)-1
   print "Choose a line, 1 -2 -3:: "
   arr[1] = Integer(gets.chomp) -1
-  if (arr[0] > 2 || arr[1] > 2)
+  if (arr[0] > 2 || arr[1] > 2 || arr[0] < 0 || arr[1] < 0)
     puts "Invalid chars"
     arr = []
     arr = cin()
