@@ -1,6 +1,6 @@
 # And this  file has the main stuff
 
-
+# checks if game over
 
 def check(board)
   board.each do | i |
@@ -21,6 +21,9 @@ def check(board)
  end
 
 end
+
+# Detects which player is the next.
+# Very important for the minimax algoritm
 def getCurrentPlayer(board)
   o = 0
   x = 0

@@ -1,4 +1,8 @@
 # This file has the interface library
+
+
+#outputs the board in a pretty way
+
 def cout(board)
   board.each do | i |
     print([i[0], i[1], i[2]].join("\t"))
@@ -6,6 +10,9 @@ def cout(board)
     puts "--------------------"
   end
 end
+
+
+#gets usr input
 
 def cin()
   arr = []
