@@ -79,6 +79,9 @@ end
 
 # This function changes th board. Valid arguments *must* be provided
 def chBoard(cur, chg)
+  if (chg.class == "Array")
+    chg = chg.join("")
+  end
   ol = cur
   chg = chg.split()
   ln = chg[0]
