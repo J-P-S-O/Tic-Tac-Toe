@@ -77,6 +77,8 @@ def _moves(board)
 end
 
 
+
+
 # This function changes th board. Valid arguments *must* be provided
 def chBoard(cur, chg)
   if (chg.class == "Array")
