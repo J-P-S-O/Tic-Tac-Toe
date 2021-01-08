@@ -43,13 +43,24 @@ def getCurrentPlayer(board)
   if (x == o)
     return 'X'
   end
-  
+
 end
-__END__
 
 # Now we need to get the possible moves
 def _moves(board)
-  player = getCurrentPlayer()
+  c1 = 0
+  c2 = 0
+
+  player = getCurrentPlayer(board)
   free_ = []
   board.each do | el |
+
     el.each do | elt |
+      if (elt == "")
+        free_.push(c1.to_s + c2.to_s)
+      end
+      c2 = c2 + 1
+    end
+    c1 = c1 + 1
+    c2 = 0
+  end
