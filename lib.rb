@@ -63,4 +63,17 @@ def _moves(board)
     end
     c1 = c1 + 1
     c2 = 0
+
   end
+  boards_ = []
+  free_.each do | opt |
+    rs = chBoard(board, opt)
+    boards__.push(rs)
+  end
+end
+
+
+# This function changes th board. Valid arguments *must* be provided
+def chBoard(cur, chg)
+  
+end
