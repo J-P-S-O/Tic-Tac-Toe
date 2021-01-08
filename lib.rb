@@ -75,5 +75,8 @@ end
 
 # This function changes th board. Valid arguments *must* be provided
 def chBoard(cur, chg)
-  
+  chg = chg.split()
+  ln = chg[0]
+  col = chg[1]
+  cur[ln][col] 
 end
