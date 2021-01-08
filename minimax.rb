@@ -20,3 +20,10 @@ def isWinner(board)
   a board state is ultimately winner or not
   It would be better if we used a `score` mechanism
   =end
+  outcomes = _moves(board)
+  # separates outcomes
+  wins = []
+  loss = []
+  
+
+end
