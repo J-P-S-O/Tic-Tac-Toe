@@ -70,13 +70,16 @@ def _moves(board)
     rs = chBoard(board, opt)
     boards__.push(rs)
   end
+  return boards__
 end
 
 
 # This function changes th board. Valid arguments *must* be provided
 def chBoard(cur, chg)
+  ol = cur
   chg = chg.split()
   ln = chg[0]
   col = chg[1]
-  cur[ln][col] 
+  cur[ln][col] = getCurrentPlayer(ol)
+  return cur
 end
