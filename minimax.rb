@@ -15,6 +15,7 @@ end
 
 
 def isWinner(board)
+  require "./lib"
   =begin
   # this function is the one that uses minimax to determine if
   a board state is ultimately winner or not
@@ -24,6 +25,6 @@ def isWinner(board)
   # separates outcomes
   wins = []
   loss = []
-  
+
 
 end
