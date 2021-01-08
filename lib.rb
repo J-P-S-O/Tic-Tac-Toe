@@ -21,11 +21,35 @@ def check(board)
  end
 
 end
-
-
+def getCurrentPlayer(board)
+  o = 0
+  x = 0
+  dummy = 0
+  board.each do | el|
+    el.each do | elt |
+      case elt
+      when "O"
+        o+=1
+      when "X"
+        x++
+      else
+        dummy++
+      end
+     end
+  end
+  if (x>o)
+    return "O"
+  end
+  if (x == o)
+    return 'X'
+  end
+  
+end
+__END__
 
 # Now we need to get the possible moves
 def _moves(board)
+  player = getCurrentPlayer()
   free_ = []
   board.each do | el |
     el.each do | elt |
