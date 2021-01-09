@@ -27,6 +27,7 @@ def isWinner(board)
   wins = []
   loss = []
   tie = []
+  # main loop
   outcomes.each do | outcome |
     if (check(outcome)) # If this state is final
         if (check(outcome) ==  cpl) # either it is won 
@@ -37,7 +38,7 @@ def isWinner(board)
             loss.push(outcome)
         end
     else 
-        if (isWinner(outcome)) # uses recursive 
+        if (!isWinner(outcome)) # uses recursive, but reverse
             wins.push(outcome)
         else 
             loss.push(outcome) #same thing
@@ -45,5 +46,9 @@ def isWinner(board)
     end
    # now all possibilities are sorted
    # we just need to figure out if it is more possible that we win or lose
-   if (wins.length > loss.length )
+   if (wins.length() >= loss.length())
+     return true
+   end 
+   return false
+
 end
