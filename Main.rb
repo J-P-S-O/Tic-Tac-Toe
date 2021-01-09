@@ -16,7 +16,23 @@ puts "Ill start the game"
 while true
     move = getNextMove(board)
     puts move # debug
-    
-
-
-
+    board = move
+    win = check(board)
+    if (win)
+        puts win 
+        puts "gameover"
+        cout(board)
+        exit(0)
+    end
+    cout(board)
+    cl = cin()
+    chBoard(cl)
+    win = check(board)
+    if (win)
+        puts win 
+        puts "gameover"
+        cout(board)
+        exit(0)
+    end
+    cout(board)
+end
