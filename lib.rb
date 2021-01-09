@@ -5,7 +5,7 @@
 def check(board)
   board.each do | i |
     if (i[0] == i[1] && i[1] == i[2] && i[0] != "")
-      return true
+      return i[0]
 
     end
   end
@@ -19,7 +19,7 @@ def check(board)
  if ((board[0][0] == board[2][2] && board[2][2] == board[1][1] && board[1][1] != '') || (board[2][0] == board[1][1] && board[1][1] == board[0][2]) && board[1][1] != '')
    return board[1][1]
  end
-
+ return false
 end
 
 # Detects which player is the next.

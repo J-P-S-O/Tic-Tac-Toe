@@ -28,6 +28,13 @@ def isWinner(board)
   loss = []
   outcomes.each do | outcome |
     if (check(outcome))
-        
+        if (check(outcome) ==  cpl)
+            wins.push(outcome)
+        else
+            loss.push(outcome)
+        end
+    else 
+        if (isWinner(outcome ))
+
         
 end
