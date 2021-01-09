@@ -59,3 +59,41 @@ def isWinner(board)
 end
 
 end
+
+def _moves(board)
+  c1 = 0
+  c2 = 0
+
+  player = getCurrentPlayer(board)
+  free_ = []
+  board.each do | el |
+
+    el.each do | elt |
+      if (elt == "")
+        free_.push(c1.to_s + c2.to_s)
+      end
+      c2 = c2 + 1
+    end
+    c1 = c1 + 1
+    c2 = 0
+
+  end
+  boards_ = []
+  free_.each do | opt |
+    rs = chBoard(board, opt)
+    boards__.push(rs)
+  end
+  return boards__
+end
+
+def chBoard(cur, chg)
+  if (chg.class == "Array")
+    chg = chg.join("")
+  end
+  ol = cur
+  chg = chg.split()
+  ln = Integer(chg[0])
+  col = Integer(chg[1])
+  cur[ln][col] = getCurrentPlayer(ol)
+  return cur
+end
