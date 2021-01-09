@@ -19,6 +19,14 @@ def check(board)
  if ((board[0][0] == board[2][2] && board[2][2] == board[1][1] && board[1][1] != '') || (board[2][0] == board[1][1] && board[1][1] == board[0][2]) && board[1][1] != '')
    return board[1][1]
  end
+ done  = true
+ board.each do |el |
+    el.each do | elt |
+        if (elt == "")
+            done = false
+        end 
+    end 
+ end 
  return false
 end
 

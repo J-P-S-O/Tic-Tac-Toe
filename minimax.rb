@@ -42,5 +42,5 @@ def isWinner(board)
     end
    # now all possibilities are sorted
    # we just need to figure out if it is more possible that we win or lose
-        
+   if (wins.)
 end
