@@ -9,7 +9,12 @@ def getNextMove(board)
   # here is the magic
   # It uses all the functions defined in other files
   possible = _moves(board)
-
+  _moves.each do | move |
+    if (isWinner(move))
+        return move
+    end
+    end 
+    return _moves[rand(_moves.length())]
 end
 
 
