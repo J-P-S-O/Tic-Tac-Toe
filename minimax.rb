@@ -15,16 +15,18 @@ end
 
 
 def isWinner(board)
+  cpl = getCurrentPlayer(board)
   require "./lib"
-  =begin
+=begin
   # this function is the one that uses minimax to determine if
   a board state is ultimately winner or not
   It would be better if we used a `score` mechanism
-  =end
+=end
   outcomes = _moves(board)
   # separates outcomes
   wins = []
   loss = []
-
-
+  outcomes.each do | outcome |
+    if (check(outcome))
+        
 end
