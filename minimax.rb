@@ -26,12 +26,15 @@ def isWinner(board)
   # separates outcomes
   wins = []
   loss = []
+  tie = []
   outcomes.each do | outcome |
     if (check(outcome)) # If this state is final
         if (check(outcome) ==  cpl) # either it is won 
             wins.push(outcome)
         elsif (check(outcome) == true)
-            loss.push(outcome) # or lost
+            tie.push(outcome)
+        else
+            loss.push(outcome)
         end
     else 
         if (isWinner(outcome)) # uses recursive 
@@ -42,5 +45,5 @@ def isWinner(board)
     end
    # now all possibilities are sorted
    # we just need to figure out if it is more possible that we win or lose
-   if (wins.)
+   if (wins.length > loss.length )
 end
