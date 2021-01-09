@@ -30,7 +30,7 @@ def isWinner(board)
     if (check(outcome)) # If this state is final
         if (check(outcome) ==  cpl) # either it is won 
             wins.push(outcome)
-        else
+        elsif (check(outcome) == true)
             loss.push(outcome) # or lost
         end
     else 

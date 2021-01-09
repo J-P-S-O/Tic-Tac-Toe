@@ -27,7 +27,7 @@ def check(board)
         end 
     end 
  end 
- return false
+ return done
 end
 
 # Detects which player is the next.
