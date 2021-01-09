@@ -27,14 +27,19 @@ def isWinner(board)
   wins = []
   loss = []
   outcomes.each do | outcome |
-    if (check(outcome))
-        if (check(outcome) ==  cpl)
+    if (check(outcome)) # If this state is final
+        if (check(outcome) ==  cpl) # either it is won 
             wins.push(outcome)
         else
-            loss.push(outcome)
+            loss.push(outcome) # or lost
         end
     else 
-        if (isWinner(outcome ))
+        if (isWinner(outcome)) # uses recursive 
+            wins.push(outcome)
+        else 
+            loss.push(outcome)
+        end
+    end
 
         
 end
