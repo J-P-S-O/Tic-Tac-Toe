@@ -10,7 +10,7 @@ def getNextMove(board)
   # It uses all the functions defined in other files
   possible = _moves(board)
   _moves.each do | move |
-    if (isWinner(move))
+    if (!isWinner(move))
         return move
     end
     end 

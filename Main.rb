@@ -14,6 +14,9 @@ me = "X"
 puts "Welcome to the ruby tictactoe game! I doubt you can win"
 puts "Ill start the game"
 while true
+    move = getNextMove(board)
+    puts move # debug
     
+
 
 
