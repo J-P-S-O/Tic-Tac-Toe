@@ -37,9 +37,10 @@ def isWinner(board)
         if (isWinner(outcome)) # uses recursive 
             wins.push(outcome)
         else 
-            loss.push(outcome)
+            loss.push(outcome) #same thing
         end
     end
-
+   # now all possibilities are sorted
+   # we just need to figure out if it is more possible that we win or lose
         
 end
