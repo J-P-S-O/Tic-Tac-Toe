@@ -11,13 +11,13 @@ def check(board)
   end
   counter = 0
   while (counter < 3)
-    if (board[0][counter] == board[1][counter] && board[0][counter] == [board[2][counter]] && (board[0][counter] != undefined) && board[0][counter] != '')
-      return true
+    if (board[0][counter] == board[1][counter] && board[0][counter] == [board[2][counter]] && board[0][counter] != '')
+      return board[0][counter]
     end
     counter = counter + 1
   end
  if ((board[0][0] == board[2][2] && board[2][2] == board[1][1] && board[1][1] != '') || (board[2][0] == board[1][1] && board[1][1] == board[0][2]) && board[1][1] != '')
-   return true
+   return board[1][1]
  end
 
 end
