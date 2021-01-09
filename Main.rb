@@ -8,3 +8,6 @@ board = [
 
 require "./interface"
 require "./lib"
+require "./minimax"
+require "./lib"
+
