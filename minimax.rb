@@ -81,18 +81,23 @@ def _moves(board)
   boards_ = []
   free_.each do | opt |
     rs = chBoard(board, opt)
-    boards__.push(rs)
+    boards_.push(rs)
   end
-  return boards__
+  return boards_
 end
 
 def chBoard(cur, chg)
+  puts chg # debug
+  puts chg.class
   if (chg.class == "Array")
     chg = chg.join("")
   end
+  puts chg
   ol = cur
-  chg = chg.split()
+  chg = chg.split("")
+  
   ln = Integer(chg[0])
+
   col = Integer(chg[1])
   cur[ln][col] = getCurrentPlayer(ol)
   return cur
