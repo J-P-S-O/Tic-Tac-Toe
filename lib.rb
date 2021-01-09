@@ -38,15 +38,15 @@ def getCurrentPlayer(board)
   dummy = 0
   board.each do | el|
     el.each do | elt |
-      case elt
-      when "O"
-        o+=1
-      when "X"
-        x++
-      else
-        dummy++
-      end
-     end
+        if (elt == "O")
+            o = o + 1
+        end
+        if (elt == "X")
+            x = x+1
+        end
+        if (elt == "")
+            dummy =  0
+    end
   end
   if (x>o)
     return "O"
@@ -98,4 +98,5 @@ def chBoard(cur, chg)
   col = chg[1]
   cur[ln][col] = getCurrentPlayer(ol)
   return cur
+end
 end
