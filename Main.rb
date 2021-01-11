@@ -176,8 +176,13 @@ def _moves(board)
     puts "DEBUG"
     cout(rs)
     boards_.push(rs)
+    rs = board
   end
+  # DEBUG INFO 
   puts "debug "
+  boards_.each do | board |
+    cout(board)
+  end
   return boards_
 end
 
