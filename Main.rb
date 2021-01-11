@@ -179,7 +179,8 @@ def _moves(board)
     puts "DEBUG"
     cout(rs)
     boards_.push(rs)
-    rs = olboard
+    puts "Olboard"
+    cout(olboard)
     board = olboard
   end
   # DEBUG INFO
