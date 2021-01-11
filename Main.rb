@@ -194,6 +194,8 @@ while true
         cout(board)
         exit(0)
     end
+
+    # debug info game ends here for some reason
     cout(board)
     cl = cin()
     chBoard(cl)
