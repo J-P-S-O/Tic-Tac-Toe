@@ -86,7 +86,7 @@ def getNextMove(board)
         return move
     end
     end
-    return _moves[rand(_moves.length())]
+    return possible[rand(_moves.length())]
 end
 
 
