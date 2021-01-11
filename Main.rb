@@ -159,12 +159,12 @@ def _moves(board)
 end
 
 def chBoard(cur, chg)
-  puts chg # debug
-  puts chg.class
+  # puts chg # debug
+  # puts chg.class
   if (chg.class == "Array")
     chg = chg.join("")
   end
-  puts chg
+  # puts chg
   ol = cur
   chg = chg.split("")
 
