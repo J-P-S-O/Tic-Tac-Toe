@@ -81,7 +81,7 @@ def getNextMove(board)
   # here is the magic
   # It uses all the functions defined in other files
   possible = _moves(board)
-  _moves.each do | move |
+  possible.each do | move |
     if (!isWinner(move))
         return move
     end
@@ -93,7 +93,7 @@ end
 
 def isWinner(board)
   cpl = getCurrentPlayer(board)
-  
+
 =begin
   # this function is the one that uses minimax to determine if
   a board state is ultimately winner or not
