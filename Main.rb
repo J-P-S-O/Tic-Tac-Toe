@@ -100,6 +100,14 @@ def isWinner(board)
   It would be better if we used a `score` mechanism
 =end
   outcomes = _moves(board)
+  =begin
+  puts "debug from line isWinner #1"
+  puts outcomes.length()
+  outcomes.each do | out |
+    puts "# debug outcome "
+    cout(out)
+  end
+  =end
   # separates outcomes
   wins = []
   loss = []
