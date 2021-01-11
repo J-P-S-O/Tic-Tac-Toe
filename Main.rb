@@ -142,6 +142,9 @@ end
 def _moves(board)
   c1 = 0
   c2 = 0
+   # DEBUG:
+  puts "Board"
+  cout(board)
 
   player = getCurrentPlayer(board)
   # debug output
@@ -174,6 +177,7 @@ def _moves(board)
     cout(rs)
     boards_.push(rs)
   end
+  puts "debug "
   return boards_
 end
 
