@@ -138,7 +138,7 @@ def isWinner(board)
 end
 
 end
-
+# WIP HERE, ISSUE IS THAT SOMEHOWW RESULT DOES NOT DIE 
 def _moves(board)
   c1 = 0
   c2 = 0
@@ -170,21 +170,13 @@ def _moves(board)
   boards_ = []
   free_.each do | opt |
     # # DEBUG:
-    puts "opt #{ opt } found for free"
-    rs = chBoard(board, opt)
-    puts "Board now"
-    cout(board)
-    # debug
-    puts "result output found"
-    puts "DEBUG"
-    cout(rs)
-    boards_.push(rs)
-    puts "Olboard"
-    cout(olboard)
-    board = olboard
+    result = chBoard(board, opt)
+    boards_.push(result)
+    result = board
+    cout (board)
   end
   # DEBUG INFO
-  puts "debug "
+  puts "debug boards__"
   boards_.each do | board |
     cout(board)
   end
@@ -194,6 +186,9 @@ end
 def chBoard(cur, chg)
   # puts chg # debug
   # puts chg.class
+  puts "Got input"
+  cout(cur)
+  puts chg
   if (chg.class == "Array")
     chg = chg.join("")
   end
@@ -205,6 +200,7 @@ def chBoard(cur, chg)
 
   col = Integer(chg[1])
   cur[ln][col] = getCurrentPlayer(ol)
+  puts "returned  #{cout(cur)}"
   return cur
 end
 

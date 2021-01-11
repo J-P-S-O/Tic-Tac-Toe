@@ -26,214 +26,196 @@ elt
 added to free_
 elt 
 added to free_
-opt 00 found for free
-Board now
+Got input
+		
+--------------------
+		
+--------------------
+		
+--------------------
+00
 X		
 --------------------
 		
 --------------------
 		
 --------------------
-result output found
-DEBUG
+returned  [["X", "", ""], ["", "", ""], ["", "", ""]]
 X		
 --------------------
 		
 --------------------
 		
 --------------------
-Olboard
+Got input
 X		
 --------------------
 		
 --------------------
 		
 --------------------
-opt 01 found for free
-Board now
+01
 X	O	
 --------------------
 		
 --------------------
 		
 --------------------
-result output found
-DEBUG
+returned  [["X", "O", ""], ["", "", ""], ["", "", ""]]
 X	O	
 --------------------
 		
 --------------------
 		
 --------------------
-Olboard
+Got input
 X	O	
 --------------------
 		
 --------------------
 		
 --------------------
-opt 02 found for free
-Board now
+02
 X	O	X
 --------------------
 		
 --------------------
 		
 --------------------
-result output found
-DEBUG
+returned  [["X", "O", "X"], ["", "", ""], ["", "", ""]]
 X	O	X
 --------------------
 		
 --------------------
 		
 --------------------
-Olboard
+Got input
 X	O	X
 --------------------
 		
 --------------------
 		
 --------------------
-opt 10 found for free
-Board now
+10
 X	O	X
 --------------------
 O		
 --------------------
 		
 --------------------
-result output found
-DEBUG
+returned  [["X", "O", "X"], ["O", "", ""], ["", "", ""]]
 X	O	X
 --------------------
 O		
 --------------------
 		
 --------------------
-Olboard
+Got input
 X	O	X
 --------------------
 O		
 --------------------
 		
 --------------------
-opt 11 found for free
-Board now
+11
 X	O	X
 --------------------
 O	O	
 --------------------
 		
 --------------------
-result output found
-DEBUG
+returned  [["X", "O", "X"], ["O", "O", ""], ["", "", ""]]
 X	O	X
 --------------------
 O	O	
 --------------------
 		
 --------------------
-Olboard
+Got input
 X	O	X
 --------------------
 O	O	
 --------------------
 		
 --------------------
-opt 12 found for free
-Board now
+12
 X	O	X
 --------------------
 O	O	O
 --------------------
 		
 --------------------
-result output found
-DEBUG
+returned  [["X", "O", "X"], ["O", "O", "O"], ["", "", ""]]
 X	O	X
 --------------------
 O	O	O
 --------------------
 		
 --------------------
-Olboard
+Got input
 X	O	X
 --------------------
 O	O	O
 --------------------
 		
 --------------------
-opt 20 found for free
-Board now
+20
 X	O	X
 --------------------
 O	O	O
 --------------------
 O		
 --------------------
-result output found
-DEBUG
+returned  [["X", "O", "X"], ["O", "O", "O"], ["O", "", ""]]
 X	O	X
 --------------------
 O	O	O
 --------------------
 O		
 --------------------
-Olboard
+Got input
 X	O	X
 --------------------
 O	O	O
 --------------------
 O		
 --------------------
-opt 21 found for free
-Board now
+21
 X	O	X
 --------------------
 O	O	O
 --------------------
 O	O	
 --------------------
-result output found
-DEBUG
+returned  [["X", "O", "X"], ["O", "O", "O"], ["O", "O", ""]]
 X	O	X
 --------------------
 O	O	O
 --------------------
 O	O	
 --------------------
-Olboard
+Got input
 X	O	X
 --------------------
 O	O	O
 --------------------
 O	O	
 --------------------
-opt 22 found for free
-Board now
+22
 X	O	X
 --------------------
 O	O	O
 --------------------
 O	O	O
 --------------------
-result output found
-DEBUG
+returned  [["X", "O", "X"], ["O", "O", "O"], ["O", "O", "O"]]
 X	O	X
 --------------------
 O	O	O
 --------------------
 O	O	O
 --------------------
-Olboard
-X	O	X
---------------------
-O	O	O
---------------------
-O	O	O
---------------------
-debug 
+debug boards__
 X	O	X
 --------------------
 O	O	O
@@ -305,7 +287,7 @@ elt O
 elt O
 elt O
 elt O
-debug 
+debug boards__
 Board
 X	O	X
 --------------------
@@ -323,7 +305,7 @@ elt O
 elt O
 elt O
 elt O
-debug 
+debug boards__
 Board
 X	O	X
 --------------------
@@ -341,7 +323,7 @@ elt O
 elt O
 elt O
 elt O
-debug 
+debug boards__
 Board
 X	O	X
 --------------------
@@ -359,7 +341,7 @@ elt O
 elt O
 elt O
 elt O
-debug 
+debug boards__
 Board
 X	O	X
 --------------------
@@ -377,7 +359,7 @@ elt O
 elt O
 elt O
 elt O
-debug 
+debug boards__
 Board
 X	O	X
 --------------------
@@ -395,7 +377,7 @@ elt O
 elt O
 elt O
 elt O
-debug 
+debug boards__
 Board
 X	O	X
 --------------------
@@ -413,7 +395,7 @@ elt O
 elt O
 elt O
 elt O
-debug 
+debug boards__
 Board
 X	O	X
 --------------------
@@ -431,7 +413,7 @@ elt O
 elt O
 elt O
 elt O
-debug 
+debug boards__
 Board
 X	O	X
 --------------------
@@ -449,7 +431,7 @@ elt O
 elt O
 elt O
 elt O
-debug 
+debug boards__
 X
 O
 X
