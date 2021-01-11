@@ -145,6 +145,7 @@ def _moves(board)
    # DEBUG:
   puts "Board"
   cout(board)
+  olboard = board
 
   player = getCurrentPlayer(board)
   # debug output
@@ -171,14 +172,17 @@ def _moves(board)
     # # DEBUG:
     puts "opt #{ opt } found for free"
     rs = chBoard(board, opt)
+    puts "Board now"
+    cout(board)
     # debug
     puts "result output found"
     puts "DEBUG"
     cout(rs)
     boards_.push(rs)
-    rs = board
+    rs = olboard
+    board = olboard
   end
-  # DEBUG INFO 
+  # DEBUG INFO
   puts "debug "
   boards_.each do | board |
     cout(board)

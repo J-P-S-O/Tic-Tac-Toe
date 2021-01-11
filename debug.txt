@@ -27,6 +27,13 @@ added to free_
 elt 
 added to free_
 opt 00 found for free
+Board now
+X		
+--------------------
+		
+--------------------
+		
+--------------------
 result output found
 DEBUG
 X		
@@ -36,6 +43,13 @@ X
 		
 --------------------
 opt 01 found for free
+Board now
+X	O	
+--------------------
+		
+--------------------
+		
+--------------------
 result output found
 DEBUG
 X	O	
@@ -45,6 +59,13 @@ X	O
 		
 --------------------
 opt 02 found for free
+Board now
+X	O	X
+--------------------
+		
+--------------------
+		
+--------------------
 result output found
 DEBUG
 X	O	X
@@ -54,6 +75,13 @@ X	O	X
 		
 --------------------
 opt 10 found for free
+Board now
+X	O	X
+--------------------
+O		
+--------------------
+		
+--------------------
 result output found
 DEBUG
 X	O	X
@@ -63,6 +91,13 @@ O
 		
 --------------------
 opt 11 found for free
+Board now
+X	O	X
+--------------------
+O	O	
+--------------------
+		
+--------------------
 result output found
 DEBUG
 X	O	X
@@ -72,6 +107,13 @@ O	O
 		
 --------------------
 opt 12 found for free
+Board now
+X	O	X
+--------------------
+O	O	O
+--------------------
+		
+--------------------
 result output found
 DEBUG
 X	O	X
@@ -81,6 +123,13 @@ O	O	O
 		
 --------------------
 opt 20 found for free
+Board now
+X	O	X
+--------------------
+O	O	O
+--------------------
+O		
+--------------------
 result output found
 DEBUG
 X	O	X
@@ -90,6 +139,13 @@ O	O	O
 O		
 --------------------
 opt 21 found for free
+Board now
+X	O	X
+--------------------
+O	O	O
+--------------------
+O	O	
+--------------------
 result output found
 DEBUG
 X	O	X
@@ -99,6 +155,13 @@ O	O	O
 O	O	
 --------------------
 opt 22 found for free
+Board now
+X	O	X
+--------------------
+O	O	O
+--------------------
+O	O	O
+--------------------
 result output found
 DEBUG
 X	O	X
