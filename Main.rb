@@ -93,21 +93,20 @@ end
 
 def isWinner(board)
   cpl = getCurrentPlayer(board)
-
 =begin
   # this function is the one that uses minimax to determine if
   a board state is ultimately winner or not
   It would be better if we used a `score` mechanism
 =end
   outcomes = _moves(board)
-  =begin
+=begin
   puts "debug from line isWinner #1"
   puts outcomes.length()
   outcomes.each do | out |
     puts "# debug outcome "
     cout(out)
   end
-  =end
+=end
   # separates outcomes
   wins = []
   loss = []
@@ -145,12 +144,18 @@ def _moves(board)
   c2 = 0
 
   player = getCurrentPlayer(board)
+  # debug output
+  puts player
   free_ = []
   board.each do | el |
 
     el.each do | elt |
+      # debug
+      puts "elt #{ elt }"
       if (elt == "")
         free_.push(c1.to_s + c2.to_s)
+        #debug
+        puts "added to free_"
       end
       c2 = c2 + 1
     end
@@ -160,7 +165,13 @@ def _moves(board)
   end
   boards_ = []
   free_.each do | opt |
+    # # DEBUG:
+    puts "opt #{ opt } found for free"
     rs = chBoard(board, opt)
+    # debug
+    puts "result output found"
+    puts "DEBUG"
+    cout(rs)
     boards_.push(rs)
   end
   return boards_
