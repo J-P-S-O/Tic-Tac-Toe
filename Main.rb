@@ -199,15 +199,29 @@ def chBoard(currrr, chg)
   chg = chg.split("")
   c3 = 0
   c4 = 0
-  
+
   ln = Integer(chg[0])
   col = Integer(chg[1])
-  brandnewboard = [[],[],[]]
+  brandnewboard = [
+    ['','',''],
+    ['','',''],
+    ['','','']
+  ]
   brandnewboard.each do | step |
-    step.each d
-  cur[ln][col] = getCurrentPlayer(ol)
-  puts "returned  #{cout(cur)}"
-  return cur
+    step.each do | space |
+      if (c3 == ln && c4 = col)
+        step = getCurrentPlayer(currrr)
+      else
+        step = currrr[c3][c4]
+      end
+
+      c4 = c4 +1
+    end
+    c3 = c3 + 1
+  end
+
+  puts "returned  #{cout(brandnewboard)}"
+  return brandnewboard
 end
 
 
