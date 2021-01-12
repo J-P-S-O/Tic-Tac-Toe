@@ -168,11 +168,12 @@ def _moves(board)
 
   end
   boards_ = []
+  fixissue_ = olboard
   free_.each do | opt |
     # # DEBUG:
 
     boards_.push(chBoard(board,opt))
-
+    board = fixissue_
     cout (board)
   end
   # DEBUG INFO
@@ -194,12 +195,16 @@ def chBoard(currrr, chg)
     chg = chg.join("")
   end
   # puts chg
-  ol = cur
+
   chg = chg.split("")
-
+  c3 = 0
+  c4 = 0
+  
   ln = Integer(chg[0])
-
   col = Integer(chg[1])
+  brandnewboard = [[],[],[]]
+  brandnewboard.each do | step |
+    step.each d
   cur[ln][col] = getCurrentPlayer(ol)
   puts "returned  #{cout(cur)}"
   return cur
