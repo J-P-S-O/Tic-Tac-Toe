@@ -138,7 +138,7 @@ def isWinner(board)
 end
 
 end
-# WIP HERE, ISSUE IS THAT SOMEHOWW RESULT DOES NOT DIE 
+# WIP HERE, ISSUE IS THAT SOMEHOWW RESULT DOES NOT DIE
 def _moves(board)
   c1 = 0
   c2 = 0
@@ -170,9 +170,9 @@ def _moves(board)
   boards_ = []
   free_.each do | opt |
     # # DEBUG:
-    result = chBoard(board, opt)
-    boards_.push(result)
-    result = board
+
+    boards_.push(chBoard(board,opt))
+
     cout (board)
   end
   # DEBUG INFO
@@ -183,7 +183,8 @@ def _moves(board)
   return boards_
 end
 
-def chBoard(cur, chg)
+def chBoard(currrr, chg)
+  cur = currrr # fix an issue here.
   # puts chg # debug
   # puts chg.class
   puts "Got input"
