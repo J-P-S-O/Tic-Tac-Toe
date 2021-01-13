@@ -189,14 +189,16 @@ def chBoard(currrr, chg)
   # puts chg # debug
   # puts chg.class
   puts "Got input"
-  #cout(cur)
-  puts chg
-  if (chg.class == "Array")
-    chg = chg.join("")
+  begin #cout(cur)
+    puts chg
+    chg = chg.split("")
+  rescue
+    dummy = 0
+    # comment
   end
   # puts chg
 
-  chg = chg.split("")
+
   c3 = 0
   c4 = 0
 
@@ -210,9 +212,9 @@ def chBoard(currrr, chg)
   brandnewboard.each do | step |
     step.each do | space |
       if (c3 == ln && c4 == col)
-        step = getCurrentPlayer(currrr)
+        step[c4] = getCurrentPlayer(currrr)
       else
-        step = currrr[c3][c4]
+        step[c4] = currrr[c3][c4]
       end
 
       c4 = c4 +1
@@ -237,6 +239,7 @@ while true
     move = getNextMove(board)
     puts move # debug
     board = move
+    puts board
     win = check(board)
     if (win)
         puts win
@@ -245,10 +248,11 @@ while true
         exit(0)
     end
 
+    puts "YOUR TURN: "
     # debug info game ends here for some reason
     cout(board)
     cl = cin()
-    chBoard(cl)
+    board = chBoard(board, cl)
     win = check(board)
     if (win)
         puts win
@@ -256,5 +260,6 @@ while true
         cout(board)
         exit(0)
     end
+    puts board
     cout(board)
 end
