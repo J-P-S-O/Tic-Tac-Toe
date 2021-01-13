@@ -174,13 +174,13 @@ def _moves(board)
 
     boards_.push(chBoard(board,opt))
     board = fixissue_
-    cout (board)
+    #cout (board)
   end
   # DEBUG INFO
-  puts "debug boards__"
-  boards_.each do | board |
-    cout(board)
-  end
+  #puts "debug boards__"
+  #boards_.each do | board |
+  #  cout(board)
+  #end
   return boards_
 end
 
@@ -189,7 +189,7 @@ def chBoard(currrr, chg)
   # puts chg # debug
   # puts chg.class
   puts "Got input"
-  cout(cur)
+  #cout(cur)
   puts chg
   if (chg.class == "Array")
     chg = chg.join("")
@@ -209,7 +209,7 @@ def chBoard(currrr, chg)
   ]
   brandnewboard.each do | step |
     step.each do | space |
-      if (c3 == ln && c4 = col)
+      if (c3 == ln && c4 == col)
         step = getCurrentPlayer(currrr)
       else
         step = currrr[c3][c4]
@@ -218,6 +218,7 @@ def chBoard(currrr, chg)
       c4 = c4 +1
     end
     c3 = c3 + 1
+    c4 = 0
   end
 
   puts "returned  #{cout(brandnewboard)}"
