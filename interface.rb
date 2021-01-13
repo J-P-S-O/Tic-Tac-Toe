@@ -33,5 +33,5 @@ def cin()
     arr = cin()
     return arr
   end
-  return arr
+  return arr.join("")
 end
