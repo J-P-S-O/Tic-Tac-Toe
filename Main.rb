@@ -252,7 +252,7 @@ while true
     # debug info game ends here for some reason
     cout(board)
     cl = cin()
-    board = chBoard(board, cl)
+    board[Integer(cl[0])][Integer(cl[1])] = "O"
     win = check(board)
     if (win)
         puts win
