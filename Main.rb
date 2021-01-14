@@ -38,6 +38,11 @@ def check(board)
  end
  return done
 end
+# SCORE AI
+def getScore(board)
+    
+
+end 
 
 # Detects which player is the next.
 # Very important for the minimax algoritm
