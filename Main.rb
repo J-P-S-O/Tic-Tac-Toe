@@ -57,6 +57,7 @@ def getScore(board)
     else
         score -= getScore(outcome)
     end
+   end 
    # now all possibilities are sorted
    # we just need to figure out if it is more possible that we win or lose
    
@@ -97,11 +98,6 @@ end
 require "./interface"
 
 
-# This part has the ai algoritm
-=begin
-License: MIT
-Git repository: https://github.com/j-p-s-o/tic-tac-toe
-=end
 
 def getNextMove(board)
 
@@ -121,20 +117,9 @@ end
 
 def isWinner(board)
   cpl = getCurrentPlayer(board)
-=begin
-  # this function is the one that uses minimax to determine if
-  a board state is ultimately winner or not
-  It would be better if we used a `score` mechanism
-=end
+
   outcomes = _moves(board)
-=begin
-  puts "debug from line isWinner #1"
-  puts outcomes.length()
-  outcomes.each do | out |
-    puts "# debug outcome "
-    cout(out)
-  end
-=end
+
   # separates outcomes
   wins = []
   loss = []
@@ -156,6 +141,7 @@ def isWinner(board)
             loss.push(outcome) #same thing
         end
     end
+   end 
    # now all possibilities are sorted
    # we just need to figure out if it is more possible that we win or lose
    if (wins.length() >= loss.length())
@@ -259,8 +245,7 @@ end
 
 
 
-# and this part starts the game
-me = "X"
+
 puts "Welcome to the ruby tictactoe game! I doubt you can win"
 puts "Ill start the game"
 while true
