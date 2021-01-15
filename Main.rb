@@ -41,47 +41,26 @@ end
 # SCORE AI
 def getScore(board)
     cpl = getCurrentPlayer(board)
-=begin
-  # this function is the one that uses minimax to determine if
-  a board state is ultimately winner or not
-  It would be better if we used a `score` mechanism
-=end
-  outcomes = _moves(board)
-=begin
-  puts "debug from line isWinner #1"
-  puts outcomes.length()
-  outcomes.each do | out |
-    puts "# debug outcome "
-    cout(out)
-  end
-=end
-  # separates outcomes
-  wins = []
-  loss = []
-  tie = []
+    outcomes = _moves(board)
+
+    score = 0
   # main loop
   outcomes.each do | outcome |
     if (check(outcome)) # If this state is final
         if (check(outcome) ==  cpl) # either it is won
-            wins.push(outcome)
+            score += 9
         elsif (check(outcome) == true)
-            tie.push(outcome)
+            score += 1
         else
-            loss.push(outcome)
+            score -= 9
         end
     else
-        if (!isWinner(outcome)) # uses recursive, but reverse
-            wins.push(outcome)
-        else
-            loss.push(outcome) #same thing
-        end
+        score -= getScore(outcome)
     end
    # now all possibilities are sorted
    # we just need to figure out if it is more possible that we win or lose
-   if (wins.length() >= loss.length())
-     return true
-   end
-   return false
+   
+   return score
 
        
 
@@ -129,12 +108,13 @@ def getNextMove(board)
   # here is the magic
   # It uses all the functions defined in other files
   possible = _moves(board)
-  possible.each do | move |
-    if (!isWinner(move))
-        return move
+  max = possible[0]
+  count = 0
+  possible.each do | pos | 
+    if (getScore(pos) >= getScore(max))
+        max = possible[count]
     end
-    end
-    return possible[rand(possible.length())]
+  return max 
 end
 
 
